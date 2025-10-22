@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="widget-container"></div>
+    
+    <script>
+        const widgetConfig = {
+
+  "type": "Card",
+  "size": "sm",
+  "children": [
+    {
+      "type": "Row",
+      "align": "start",
+      "gap": 3,
+      "children": [
+        {
+          "type": "Col",
+          "align": "start",
+          "gap": 1,
+          "width": 80,
+          "children": [
+            {
+              "type": "Caption",
+              "value": "Sábado",
+              "size": "lg"
+            },
+            {
+              "type": "Title",
+              "value": "18",
+              "size": "3xl"
+            }
+          ]
+        },
+        {
+          "type": "Col",
+          "flex": "auto",
+          "gap": 2,
+          "children": [
+            {
+              "type": "Row",
+              "children": [
+                {
+                  "type": "Text",
+                  "value": "octubre 2025",
+                  "size": "sm",
+                  "color": "secondary"
+                },
+                {
+                  "type": "Spacer"
+                },
+                {
+                  "type": "Badge",
+                  "label": "Hoy",
+                  "color": "info"
+                }
+              ]
+            },
+            {
+              "type": "Title",
+              "value": "Se celebra hoy",
+              "size": "sm"
+            },
+            {
+              "type": "Row",
+              "key": "wmday",
+              "gap": 3,
+              "children": [
+                {
+                  "type": "Box",
+                  "width": 4,
+                  "height": "32px",
+                  "radius": "full",
+                  "background": "pink-400"
+                },
+                {
+                  "type": "Col",
+                  "children": [
+                    {
+                      "type": "Text",
+                      "value": "Día Mundial de la Menopausia",
+                      "size": "sm",
+                      "weight": "semibold"
+                    },
+                    {
+                      "type": "Caption",
+                      "value": "Global"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "Row",
+              "key": "akday",
+              "gap": 3,
+              "children": [
+                {
+                  "type": "Box",
+                  "width": 4,
+                  "height": "32px",
+                  "radius": "full",
+                  "background": "blue-400"
+                },
+                {
+                  "type": "Col",
+                  "children": [
+                    {
+                      "type": "Text",
+                      "value": "Alaska Day",
+                      "size": "sm",
+                      "weight": "semibold"
+                    },
+                    {
+                      "type": "Caption",
+                      "value": "Alaska, EE. UU."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "Divider"
+            },
+            {
+              "type": "Row",
+              "gap": 2,
+              "children": [
+                {
+                  "type": "Select",
+                  "name": "calendar.region",
+                  "options": [
+                    {
+                      "value": "global",
+                      "label": "Global"
+                    },
+                    {
+                      "value": "us",
+                      "label": "Estados Unidos"
+                    },
+                    {
+                      "value": "mx",
+                      "label": "México"
+                    },
+                    {
+                      "value": "es",
+                      "label": "España"
+                    },
+                    {
+                      "value": "ar",
+                      "label": "Argentina"
+                    }
+                  ],
+                  "defaultValue": "global",
+                  "variant": "ghost",
+                  "onChangeAction": {
+                    "type": "calendar.setRegion",
+                    "payload": {
+                      "date": "2025-10-18"
+                    }
+                  }
+                },
+                {
+                  "type": "Spacer"
+                },
+                {
+                  "type": "Button",
+                  "label": "Ver más",
+                  "variant": "outline",
+                  "onClickAction": {
+                    "type": "calendar.view",
+                    "payload": {
+                      "date": "2025-10-18"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+
+        };
+        
+        ChatKit.render('widget-container', widgetConfig);
+    </script>
+</body>
+</html>
