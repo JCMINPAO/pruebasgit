@@ -1,22 +1,6 @@
 mi primer texto a modificar
 
 estoy modificando mediante git creo que es algo basico pero curioso 
-mi segunda modificacion
-mi tercera modificacion
-mi cuarta modificacion
-mi quinta modificacion
 
 
-seguimos aprendiendo
-poco a poco vamos entiendo como funciona el mundo de los programadores del mundo y asi debe ser aprender aprender
-nunca me cansare de aprender    
-
-
-
-
-
-ahora voy a cambia en la rma principal para ver q no se mantiene en la otra rama
-pondre mas texto 
-por si las mmoscas se modificasn seria mejor estar mas atento ante ello
-pero digamos sera mejor  hacer los cambios ademas estoy aprendiendo bsatante y eso es lo q cuenta
-o q vas a decir 
+solo tengo el login es la nueva rama
