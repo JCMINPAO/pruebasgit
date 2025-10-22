@@ -1,9 +1,2 @@
-mi primer texto a modificar
-
-estoy modificando mediante git creo que es algo basico pero curioso 
-mi segunda modificacion
-mi tercera modificacion
-mi cuarta modificacion
-mi quinta modificacion
-
-
+primer comentario
+segundo comentarios
